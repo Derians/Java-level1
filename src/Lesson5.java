@@ -39,7 +39,7 @@ class Lesson5 {
  * printing with override toString method.
  */
         for (Employee employee : employeeArray) {
-            if (employee.age >= 40)
+            if (employee.getAge() >= 40)
             System.out.println(employee.toString());
         }
     }
@@ -48,12 +48,12 @@ class Lesson5 {
 // Creating class Employee.
 class Employee {
 
-    String fullName;
-    String position;
-    String email;
-    String phone;
-    int salary;
-    int age;
+    private String fullName;
+    private String position;
+    private String email;
+    private String phone;
+    private int salary;
+    private int age;
 
 //  Creating class constructor with fill all fields.
     Employee(String fullName, String position, String email,
@@ -65,7 +65,12 @@ class Employee {
         this.salary = salary;
         this.age = age;
     }
-//  Method that displays information about the object in the console.
+
+    int getAge() {
+        return age;
+    }
+
+    //  Method that displays information about the object in the console.
     void print() {
         System.out.println("Full Name: " + fullName +
                 ", Position: " + position + ", Email: " + email +
