@@ -74,7 +74,7 @@ class Cat extends Animal {
     }
 //  Override swim method, because cat can't swim
     @Override
-    public boolean swim(int value) {
+    public boolean swim(int length) {
         return false;
     }
 }
