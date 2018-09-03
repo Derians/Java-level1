@@ -71,7 +71,9 @@ class Cat {
     }
 
     void eat(Plate plate) {
-        satiety = plate.dicreaseFood(appetite);
+        if (!satiety) {
+            satiety = plate.dicreaseFood(appetite);
+        }
     }
 }
 
