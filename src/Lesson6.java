@@ -1,7 +1,7 @@
 /**
  * Java level 1, lesson 6
  *
- * 1. Created classes Dog and Cat with inheritance from the class Animal.
+ * 1. Created classes Dog and L6Cat with inheritance from the class Animal.
  *
  * 2. Animals can perform actions: run, swim, jump over an obstacle.
  * As a parameter, each method is given a value indicating either
@@ -24,8 +24,8 @@
 public class Lesson6 {
 
     public static void main(String[] args) {
-// Create array animals with class object Cat and Dog, and interface IAnimals
-        IAnimal[] animals = {new Cat(200, 2),
+// Create array animals with class object L6Cat and Dog, and interface IAnimals
+        IAnimal[] animals = {new L6Cat(200, 2),
                 new Dog(400, 0.5, 10),
                 new Dog(600, 0.5, 10)};
 
@@ -68,8 +68,8 @@ private int swim_max;
     }
 }
 
-class Cat extends Animal {
-    Cat(int run_max, double jump_max) {
+class L6Cat extends Animal {
+    L6Cat(int run_max, double jump_max) {
         super(run_max, jump_max, 0);
     }
 //  Override swim method, because cat can't swim
